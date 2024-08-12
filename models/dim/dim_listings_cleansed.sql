@@ -21,8 +21,9 @@ SELECT
   host_id,
   REPLACE(
     price_str,
-    '$'
-  ) :: NUMBER(
+    '$',
+    ''
+  ) :: NUMERIC(
     10,
     2
   ) AS price,
